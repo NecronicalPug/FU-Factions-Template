@@ -48,7 +48,7 @@ class PAF_base_I;
 
 //the units below are templates used to base your soldiers on. they will contain, Uniform, miscellaneous items, their factions and their voice and faces
 
-class PAF_base_m_B_temp : PAFA_base_B //_temp unique name of base units that will affect all your soldiers
+class PAF_base_m_B_temp : PAF_base_B //_temp unique name of base units that will affect all your soldiers
                   {
                   identityTypes[] = {"LanguageENGB_F","Head_NATO"}; //language and face
                   side = 1;                                         //Defines faction in mission
