@@ -1,9 +1,9 @@
 class CfgPatches
 {
-    class FU_faction_MKII_Temp //unique name given for Arma to find the config, same names will over write other mods.
+    class PAF_faction //unique name given for Arma to find the config, same names will over write other mods.
     {
-           name = "Freelance Union temp"; //name shown in config only
-           Author = "Mission maker";   //name shown in config only
+           name = "Polish Armed Forces" //name shown in config only
+           Author = "Pug, fork from FU-Factions-Template by Bolty";   //name shown in config only
            units[] = {}; 
            weapons[] = {};
    };
@@ -12,21 +12,21 @@ class CfgPatches
 
 class CfgFactionClasses
 {
-    class FU_Faction_m_blufor //used to define faction of a unit
+    class PAF_Faction_m_blufor //used to define faction of a unit
     {
-        displayName = "Freelancers Union Custom"; // display names of Faction
+        displayName = "Polish Armed Forces (BLU)"; // display names of Faction
         Priority = 6; 
         side = 1; //faction side
     };
-    class FU_Faction_m_Opfor
+    class PAF_Faction_m_Opfor
     {
-        displayName = "Freelancers Union Custom";
+        displayName = "Polish Armed Forces (OPF)";
         Priority = 6; 
         side = 0; 
     };
-    class FU_Faction_m_Indep
+    class PAF_Faction_m_Indep
     {
-        displayName = "Freelancers Union Custom";
+        displayName = "Polish Armed Forces (IND)";
         Priority = 6; 
         side = 2; 
     };
@@ -42,17 +42,17 @@ class CfgVehicles
 #define mags_2(a) a, a
 #define mags_1(a) a
 
-class FU_base_B;
-class FU_base_O;
-class FU_base_I;
+class PAF_base_B;
+class PAF_base_O;
+class PAF_base_I;
 
 //the units below are templates used to base your soldiers on. they will contain, Uniform, miscellaneous items, their factions and their voice and faces
 
-class FU_base_m_B_temp : FU_base_B //_temp unique name of base units that will affect all your soldiers
+class PAF_base_m_B_temp : PAFA_base_B //_temp unique name of base units that will affect all your soldiers
                   {
                   identityTypes[] = {"LanguageENGB_F","Head_NATO"}; //language and face
                   side = 1;                                         //Defines faction in mission
-                  Faction = "FU_Faction_m_blufor";                  //Defines faction in editor catagories
+                  Faction = "PAF_Faction_m_blufor";                  //Defines faction in editor catagories
                   uniformClass = "FU_uni_win";                      //uniform
                   items[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
                              mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"}; 
@@ -66,22 +66,22 @@ class FU_base_m_B_temp : FU_base_B //_temp unique name of base units that will a
 
                   };
 
-class FU_base_m_O_temp : FU_base_O //opfor
+class PAF_base_m_O_temp : PAF_base_O //opfor
                   {
                   identityTypes[] = {"LanguageRUS_F","Head_Russian","Head_Asian","Head_Euro","Head_Enoch"};
                   side = 0;
-                  Faction = "FU_Faction_m_opfor";
+                  Faction = "PAF_Faction_m_opfor";
                   uniformClass = "FU_uni_bdu";
                   items[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
                              mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"};
                   respawnitems[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
                              mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"};
                   };
-class FU_base_m_I_temp : FU_base_I //indep
+class PAF_base_m_I_temp : PAF_base_I //indep
                   {
                   identityTypes[] = {"LanguageGRE_F","Head_Greek"};
                   side = 2;
-                  Faction = "FU_Faction_m_Indep";
+                  Faction = "PAF_Faction_m_Indep";
                   uniformClass = "FU_uni_biz";
                   items[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
                              mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"};
