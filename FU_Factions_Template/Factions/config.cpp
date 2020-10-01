@@ -141,9 +141,9 @@ class PAF_Medic_SF_m : PAF_base_m_B_temp                                 //first
 
       };
 
-class PAF_Rifleman_GROM_m : PAF_base_m_B_temp                                 //first name Your new unit, second name unit it's copying from. 
+class PAF_Rifleman_GROM_m : PAF_base_m_B_temp                              
       {
-      editorSubcategory = "PAF_Factions_SF_category";                  
+      editorSubcategory = "PAF_Factions_GROM_category";                  
       icon = "iconManLeader";                                         
       scope = 2;                                                      
       DisplayName = "GROM Rifleman";
