@@ -14,6 +14,7 @@ class CfgEditorSubcategories
 	{
 		displayName = "Men (Army)"; // Name used to define category of your soldiers Men (Combat Patrol) etc
 	};
+
 };
 class Cfgvehicles 
 {
@@ -21,7 +22,7 @@ class Cfgvehicles
 #define mags_4(a) a, a, a, a
 #define mags_3(a) a, a, a
 #define mags_2(a) a, a
-#define ammo_rifle_b "20Rnd_762x51_Mag" //Ammo name, used to avoid copy pasting ammo for every soldier
+#define ammo_rifle_b "30Rnd_65x39_caseless_mag" //Ammo name, used to avoid copy pasting ammo for every soldier
 #define ammo_pistol_b "16Rnd_9x21_Mag"
 
 
@@ -43,8 +44,8 @@ class PAF_Leader_m_temp : PAF_base_m_B_temp                                 //fi
       icon = "iconManLeader";                                          //Display of unit icon in game for squads. Deleted for Default Rifleman
       scope = 2;                                                      //Allowed to be Displayed in editor
       DisplayName = "Squad Leader";
-      linkedItems[] = {"FU_Vest_kha_lit","H_Cap_oli_hs","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};    // vest, helmet, radio etc
-      weapons[] = {"FU_Rifle_p_b","FU_pistol_b","Throw","Put","Rangefinder"};                                   //Rifle, Pistol, Rocketlauncher, Throw and put explosives and granades. Binos
+      linkedItems[] = {"V_PlateCarrier2_wdl","H_HelmetSpecB_wdl","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};    // vest, helmet, radio etc
+      weapons[] = {"arifle_MX_GL_Hamr_pointer_F","FU_pistol_b","Throw","Put","Rangefinder"};                                   //Rifle, Pistol, Rocketlauncher, Throw and put explosives and granades. Binos
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};       //magazines grenades using defined list above.
       backpack = "PAF_Leader_m_pack_temp"                                                                      //backpacks defined at bottom
 
@@ -56,8 +57,8 @@ class PAF_RiflemanLAT_m_temp : PAF_base_m_B_temp
       icon = "iconManAT";
       scope = 2;
       DisplayName = "Rifleman (LAT)";
-      linkedItems[] = {"FU_Vest_kha_lit","H_Cap_oli_hs","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};
-      weapons[] = {"FU_Rifle_p_b","FU_pistol_b","launch_MRAWS_sand_rail_F","Throw","Put","Binocular"};            //this guy has a rocketlauncher
+      linkedItems[] = {"V_PlateCarrier2_wdl","H_HelmetSpecB_wdl","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};
+      weapons[] = {"arifle_MX_GL_Hamr_pointer_F","FU_pistol_b","launch_MRAWS_sand_rail_F","Throw","Put","Binocular"};            //this guy has a rocketlauncher
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};
       backpack = "PAF_LAT_m_pack_temp"
 
@@ -71,8 +72,8 @@ class PAF_Medic_m_temp : PAF_base_m_B_temp
       icon = "iconManMedic";
       scope = 2;
       DisplayName = "Support Medic";
-      linkedItems[] = {"FU_Vest_kha_lit","H_Cap_oli_hs","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};
-      weapons[] = {"FU_Rifle_p_b","FU_pistol_b","Throw","Put","Binocular"};
+      linkedItems[] = {"V_PlateCarrier2_wdl","H_HelmetSpecB_wdl","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};
+      weapons[] = {"arifle_MX_GL_Hamr_pointer_F","FU_pistol_b","Throw","Put","Binocular"};
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};
       backpack = "PAF_Medic_m_pack_temp"
 
@@ -87,7 +88,7 @@ class PAF_Crew_m_temp : PAF_base_m_B_temp
       icon = "IconManEngineer";
       scope = 2;
       DisplayName = "Support Engineer";
-      weapons[] = {"FU_Rifle_p_b","FU_pistol_b","Throw","Put","Binocular"};
+      weapons[] = {"arifle_MX_GL_Hamr_pointer_F","FU_pistol_b","Throw","Put","Binocular"};
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};
       backpack = "PAF_Crew_m_pack_temp"
       };

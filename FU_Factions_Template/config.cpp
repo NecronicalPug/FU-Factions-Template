@@ -42,18 +42,18 @@ class CfgVehicles
 #define mags_2(a) a, a
 #define mags_1(a) a
 
-class PAF_base_B;
-class PAF_base_O;
-class PAF_base_I;
+class FU_base_B;
+class FU_base_O;
+class FU_base_I;
 
 //the units below are templates used to base your soldiers on. they will contain, Uniform, miscellaneous items, their factions and their voice and faces
 
-class PAF_base_m_B_temp : PAF_base_B //_temp unique name of base units that will affect all your soldiers
+class PAF_base_m_B_temp : FU_base_B //_temp unique name of base units that will affect all your soldiers
                   {
-                  identityTypes[] = {"LanguageENGB_F","Head_NATO"}; //language and face
+                  identityTypes[] = {"LanguagePOL_F","Head_NATO"}; //language and face
                   side = 1;                                         //Defines faction in mission
                   Faction = "PAF_Faction_m_blufor";                  //Defines faction in editor catagories
-                  uniformClass = "FU_uni_win";                      //uniform
+                  uniformClass = "U_B_CombatUniform_mcam_wdl_f";                      //uniform
                   items[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
                              mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"}; 
 
@@ -66,23 +66,23 @@ class PAF_base_m_B_temp : PAF_base_B //_temp unique name of base units that will
 
                   };
 
-class PAF_base_m_O_temp : PAF_base_O //opfor
+class PAF_base_m_O_temp : FU_base_O //opfor
                   {
-                  identityTypes[] = {"LanguageRUS_F","Head_Russian","Head_Asian","Head_Euro","Head_Enoch"};
+                  identityTypes[] = {"LanguagePOL_F","Head_Russian","Head_Asian","Head_Euro","Head_Enoch"};
                   side = 0;
                   Faction = "PAF_Faction_m_opfor";
-                  uniformClass = "FU_uni_bdu";
+                  uniformClass = "U_B_CombatUniform_mcam_wdl_f";
                   items[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
                              mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"};
                   respawnitems[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
                              mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"};
                   };
-class PAF_base_m_I_temp : PAF_base_I //indep
+class PAF_base_m_I_temp : FU_base_I //indep
                   {
-                  identityTypes[] = {"LanguageGRE_F","Head_Greek"};
+                  identityTypes[] = {"LanguagePOL_F","Head_Greek"};
                   side = 2;
                   Faction = "PAF_Faction_m_Indep";
-                  uniformClass = "FU_uni_biz";
+                  uniformClass = "U_B_CombatUniform_mcam_wdl_f";
                   items[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
                              mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"};
                   respawnitems[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
