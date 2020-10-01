@@ -4,7 +4,7 @@ class CfgPatches
     {
            name = "Polish Armed Forces"; //name shown in config only
            Author = "Pug, forked from FU-Factions-Template by Bolty";                                                                     //name shown in config only
-           units[] = {"PAF_Leader_m_temp","PAF_RiflemanLAT_m_temp","PAF_Medic_m_temp","PAF_Crew_m_temp"};   //Needed for use with Zeus, must be same as below when _temp is changed
+           units[] = {"PAF_Leader_m_temp","PAF_RiflemanLAT_m_temp","PAF_Medic_m_temp","PAF_Crew_m_temp","PAF_Leader_SF_m","PAF_Rifleman_SF_m","PAF_Medic_SF_m"};   //Needed for use with Zeus, must be same as below when _temp is changed
            weapons[] = {};
    };
 };
@@ -19,6 +19,11 @@ class CfgEditorSubcategories
     {
         displayName = "Men (Recon)";
     }
+
+    class PAF_Factions_GROM_category
+    {
+        DisplayName = "Men (GROM)";
+    }
     
 };
 class Cfgvehicles 
@@ -27,7 +32,7 @@ class Cfgvehicles
 #define mags_4(a) a, a, a, a
 #define mags_3(a) a, a, a
 #define mags_2(a) a, a
-#define ammo_rifle_b "30Rnd_65x39_caseless_mag" //Ammo name, used to avoid copy pasting ammo for every soldier
+#define ammo_rifle_b "30Rnd_65x39_caseless_khaki_mag" //Ammo name, used to avoid copy pasting ammo for every soldier
 #define ammo_pistol_b "16Rnd_9x21_Mag"
 
 
@@ -136,7 +141,17 @@ class PAF_Medic_SF_m : PAF_base_m_B_temp                                 //first
 
       };
 
+class PAF_Rifleman_GROM_m : PAF_base_m_B_temp                                 //first name Your new unit, second name unit it's copying from. 
+      {
+      editorSubcategory = "PAF_Factions_SF_category";                  
+      icon = "iconManLeader";                                         
+      scope = 2;                                                      
+      DisplayName = "GROM Rifleman";
+      linkedItems[] = {"V_PlateCarrier1_wdl","H_HelmetB_light_wdl","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};    
+      weapons[] = {"arifle_MX_khk_Hamr_Pointer_F","FU_pistol_b","Throw","Put","Rangefinder"};                                   
+      magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};                                                                  
 
+      };
 
 //backpacks below
 
