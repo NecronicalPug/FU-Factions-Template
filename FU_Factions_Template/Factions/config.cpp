@@ -50,7 +50,7 @@ class PAF_Leader_m_temp : PAF_base_m_B_temp                                 //fi
       scope = 2;                                                      //Allowed to be Displayed in editor
       DisplayName = "Squad Leader";
       linkedItems[] = {"V_PlateCarrier2_wdl","H_HelmetSpecB_wdl","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};    // vest, helmet, radio etc
-      weapons[] = {"arifle_MX_GL_Hamr_pointer_F","FU_pistol_b","Throw","Put","Rangefinder"};                                   //Rifle, Pistol, Rocketlauncher, Throw and put explosives and granades. Binos
+      weapons[] = {"arifle_MX_GL_khk_Hamr_Pointer_F","FU_pistol_b","Throw","Put","Rangefinder"};                                   //Rifle, Pistol, Rocketlauncher, Throw and put explosives and granades. Binos
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};       //magazines grenades using defined list above.
       backpack = "PAF_Leader_m_pack_temp"                                                                      //backpacks defined at bottom
 
@@ -63,7 +63,7 @@ class PAF_RiflemanLAT_m_temp : PAF_base_m_B_temp
       scope = 2;
       DisplayName = "Rifleman (LAT)";
       linkedItems[] = {"V_PlateCarrier2_wdl","H_HelmetSpecB_wdl","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};
-      weapons[] = {"arifle_MX_GL_Hamr_pointer_F","FU_pistol_b","launch_MRAWS_green_rail_F","Throw","Put","Binocular"};            //this guy has a rocketlauncher
+      weapons[] = {"arifle_MX_GL_khk_Hamr_Pointer_F","FU_pistol_b","launch_MRAWS_green_rail_F","Throw","Put","Binocular"};            //this guy has a rocketlauncher
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};
       backpack = "PAF_LAT_m_pack_temp"
 
@@ -78,7 +78,7 @@ class PAF_Medic_m_temp : PAF_base_m_B_temp
       scope = 2;
       DisplayName = "Support Medic";
       linkedItems[] = {"V_PlateCarrier2_wdl","H_HelmetSpecB_wdl","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};
-      weapons[] = {"arifle_MX_GL_Hamr_pointer_F","FU_pistol_b","Throw","Put","Binocular"};
+      weapons[] = {"arifle_MX_GL_khk_Hamr_Pointer_F","FU_pistol_b","Throw","Put","Binocular"};
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};
       backpack = "PAF_Medic_m_pack_temp"
 
@@ -93,7 +93,7 @@ class PAF_Crew_m_temp : PAF_base_m_B_temp
       icon = "IconManEngineer";
       scope = 2;
       DisplayName = "Support Engineer";
-      weapons[] = {"arifle_MX_GL_Hamr_pointer_F","FU_pistol_b","Throw","Put","Binocular"};
+      weapons[] = {"arifle_MX_GL_khk_Hamr_Pointer_F","FU_pistol_b","Throw","Put","Binocular"};
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};
       backpack = "PAF_Crew_m_pack_temp"
       };
@@ -105,7 +105,7 @@ class PAF_Leader_SF_m : PAF_base_m_B_temp                                 //firs
       scope = 2;                                                      //Allowed to be Displayed in editor
       DisplayName = "Recon Squad Leader";
       linkedItems[] = {"V_PlateCarrier1_wdl","H_HelmetB_light_wdl","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};    // vest, helmet, radio etc
-      weapons[] = {"arifle_MX_Hamr_pointer_F","FU_pistol_b","Throw","Put","Rangefinder"};                                   //Rifle, Pistol, Rocketlauncher, Throw and put explosives and granades. Binos
+      weapons[] = {"arifle_MX_khk_Hamr_Pointer_F","FU_pistol_b","Throw","Put","Rangefinder"};                                   //Rifle, Pistol, Rocketlauncher, Throw and put explosives and granades. Binos
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};       //magazines grenades using defined list above.
       backpack = "PAF_Leader_m_pack_temp"                                                                      //backpacks defined at bottom
 
@@ -118,7 +118,7 @@ class PAF_Rifleman_SF_m : PAF_base_m_B_temp                                 //fi
       scope = 2;                                                      //Allowed to be Displayed in editor
       DisplayName = "Recon Rifleman";
       linkedItems[] = {"V_PlateCarrier1_wdl","H_HelmetB_light_wdl","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};    // vest, helmet, radio etc
-      weapons[] = {"arifle_MX_Hamr_pointer_F","FU_pistol_b","Throw","Put","Rangefinder"};                                   //Rifle, Pistol, Rocketlauncher, Throw and put explosives and granades. Binos
+      weapons[] = {"arifle_MX_khk_Hamr_Pointer_F","FU_pistol_b","Throw","Put","Rangefinder"};                                   //Rifle, Pistol, Rocketlauncher, Throw and put explosives and granades. Binos
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};       //magazines grenades using defined list above.                                                                    
 
       };
@@ -130,7 +130,7 @@ class PAF_Medic_SF_m : PAF_base_m_B_temp                                 //first
       scope = 2;                                                      //Allowed to be Displayed in editor
       DisplayName = "Recon Medic";
       linkedItems[] = {"V_PlateCarrier1_wdl","H_HelmetB_light_wdl","ItemCompass","ItemMap","TFAR_anprc152","ItemWatch"};    // vest, helmet, radio etc
-      weapons[] = {"arifle_MX_Hamr_pointer_F","FU_pistol_b","Throw","Put","Rangefinder"};                                   //Rifle, Pistol, Rocketlauncher, Throw and put explosives and granades. Binos
+      weapons[] = {"arifle_MX_khk_Hamr_Pointer_F","FU_pistol_b","Throw","Put","Rangefinder"};                                   //Rifle, Pistol, Rocketlauncher, Throw and put explosives and granades. Binos
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_b),mags_2(HandGrenade),mags_2(SmokeShell)};       //magazines grenades using defined list above.
       backpack = "PAF_Medic_m_pack_temp"                                                                      //backpacks defined at bottom
 
