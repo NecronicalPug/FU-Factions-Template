@@ -66,9 +66,27 @@ class PAF_base_m_B_temp : FU_base_B //_temp unique name of base units that will 
 
                   };
 
+class PAF_base_m_B_GROM : FU_base_B //_temp unique name of base units that will affect all your soldiers
+                  {
+                  identityTypes[] = {"LanguagePOL_F","Head_NATO"}; //language and face
+                  side = 1;                                         //Defines faction in mission
+                  Faction = "PAF_Faction_m_blufor";                  //Defines faction in editor catagories
+                  uniformClass = "rhs_uniform_g3_mc";                      //uniform
+                  items[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
+                             mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"}; 
+
+//items: basic FU loadout, will NOT exceed uniform storage, items will be lost if too much is added. Example Storage 50, 50 grenades + 1 bandage = 50 grenades no bandages
+
+                  respawnitems[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
+                             mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"};
+
+//respawnitems: Items units respawn with if Ace doesn't save your loadouts. mostly not needed
+
+                  };
+
 class PAF_base_m_O_temp : FU_base_O //opfor
                   {
-                  identityTypes[] = {"LanguagePOL_F","Head_Russian","Head_Asian","Head_Euro","Head_Enoch"};
+                  identityTypes[] = {"LanguagePOL_F","Head_NATO"};
                   side = 0;
                   Faction = "PAF_Faction_m_opfor";
                   uniformClass = "U_B_CombatUniform_mcam_wdl_f";
@@ -79,7 +97,7 @@ class PAF_base_m_O_temp : FU_base_O //opfor
                   };
 class PAF_base_m_I_temp : FU_base_I //indep
                   {
-                  identityTypes[] = {"LanguagePOL_F","Head_Greek"};
+                  identityTypes[] = {"LanguagePOL_F","Head_NATO"};
                   side = 2;
                   Faction = "PAF_Faction_m_Indep";
                   uniformClass = "U_B_CombatUniform_mcam_wdl_f";
