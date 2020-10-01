@@ -190,6 +190,46 @@ rarityGroup = 0.5;
                     };
 
        };
+
+class PAF_Recon_SF_m
+       {
+name = "5: Recon Team";
+side = 1;
+faction = "PAF_Faction_m_blufor";
+icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+rarityGroup = 0.5;
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "PAF_Leader_SF_m";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "PAF_Medic_SF_m";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "PAF_Rifleman_SF_m";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "PAF_Rifleman_SF_m";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "PAF_Rifleman_SF_m";
+                    };
+
+       };
                           };
 
 
