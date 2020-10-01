@@ -39,7 +39,8 @@ class Cfgvehicles
 
 
 
-class PAF_base_m_B_temp; //_temp unique name from base templates config, copies item loadout faction and voice and faces Currently Blufor
+class PAF_base_m_B_temp;
+class PAF_base_m_B_GROM_temp;   //_temp unique name from base templates config, copies item loadout faction and voice and faces Currently Blufor
 
 
 class FU_literadio_bdu; //defines backpacks you wish to use for your units see bottom
@@ -51,7 +52,7 @@ class B_kitbag_mcamo;
 
 
 
-class PAF_Leader_m_temp : PAF_base_m_B_temp                                 //first name Your new unit, second name unit it's copying from. 
+class PAF_Leader_m_temp : PAF_base_m_B_GROM_temp                                 //first name Your new unit, second name unit it's copying from. 
       {
       editorSubcategory = "PAF_Factions_category_temp";                  //Displays in editor as Men (Temporary example army)
       icon = "iconManLeader";                                          //Display of unit icon in game for squads. Deleted for Default Rifleman
@@ -64,7 +65,7 @@ class PAF_Leader_m_temp : PAF_base_m_B_temp                                 //fi
 
       };
 
-class PAF_RiflemanLAT_m_temp : PAF_base_m_B_temp
+class PAF_RiflemanLAT_m_temp : PAF_base_m_B_GROM_temp
       {
       editorSubcategory = "PAF_Factions_category_temp";
       icon = "iconManAT";
@@ -78,7 +79,7 @@ class PAF_RiflemanLAT_m_temp : PAF_base_m_B_temp
       };
 
 
-class PAF_Medic_m_temp : PAF_base_m_B_temp
+class PAF_Medic_m_temp : PAF_base_m_B_GROM_temp
       {
       editorSubcategory = "PAF_Factions_category_temp";
       attendant = 1;                                                   //defines this unit as a medic
@@ -93,7 +94,7 @@ class PAF_Medic_m_temp : PAF_base_m_B_temp
       };
 
 
-class PAF_Crew_m_temp : PAF_base_m_B_temp
+class PAF_Crew_m_temp : PAF_base_m_B_GROM_temp
       {
       editorSubcategory = "PAF_Factions_category_temp";
       engineer = 1;                                                      //defines this unit as a engineer
@@ -106,7 +107,7 @@ class PAF_Crew_m_temp : PAF_base_m_B_temp
       backpack = "PAF_Crew_m_pack_temp"
       };
 
-class PAF_Leader_SF_m : PAF_base_m_B_temp                                 //first name Your new unit, second name unit it's copying from. 
+class PAF_Leader_SF_m : PAF_base_m_B_GROM_temp                                 //first name Your new unit, second name unit it's copying from. 
       {
       editorSubcategory = "PAF_Factions_SF_category";                  //Displays in editor as Men (Temporary example army)
       icon = "iconManLeader";                                          //Display of unit icon in game for squads. Deleted for Default Rifleman
@@ -119,7 +120,7 @@ class PAF_Leader_SF_m : PAF_base_m_B_temp                                 //firs
 
       };
 
-class PAF_Rifleman_SF_m : PAF_base_m_B_temp                                 //first name Your new unit, second name unit it's copying from. 
+class PAF_Rifleman_SF_m : PAF_base_m_B_GROM_temp                                 //first name Your new unit, second name unit it's copying from. 
       {
       editorSubcategory = "PAF_Factions_SF_category";                  //Displays in editor as Men (Temporary example army)
       icon = "iconManLeader";                                          //Display of unit icon in game for squads. Deleted for Default Rifleman
@@ -131,7 +132,7 @@ class PAF_Rifleman_SF_m : PAF_base_m_B_temp                                 //fi
 
       };
 
-class PAF_Medic_SF_m : PAF_base_m_B_temp                                 //first name Your new unit, second name unit it's copying from. 
+class PAF_Medic_SF_m : PAF_base_m_B_GROM_temp                                 //first name Your new unit, second name unit it's copying from. 
       {
       editorSubcategory = "PAF_Factions_SF_category";                  //Displays in editor as Men (Temporary example army)
       icon = "iconManLeader";                                          //Display of unit icon in game for squads. Deleted for Default Rifleman
@@ -144,7 +145,7 @@ class PAF_Medic_SF_m : PAF_base_m_B_temp                                 //first
 
       };
 
-class PAF_Leader_GROM_m : PAF_base_m_B_temp                             
+class PAF_Leader_GROM_m : PAF_base_m_B_GROM_temp                             
       {
       editorSubcategory = "PAF_Factions_GROM_category";                  
       icon = "iconManLeader";                                         
@@ -156,7 +157,7 @@ class PAF_Leader_GROM_m : PAF_base_m_B_temp
       backpack = "PAF_Leader_m_pack_temp"
       };
 
-class PAF_RiflemanLAT_GROM_m : PAF_base_m_B_temp                             
+class PAF_RiflemanLAT_GROM_m : PAF_base_m_B_GROM_temp                             
       {
       editorSubcategory = "PAF_Factions_GROM_category";                  
       icon = "iconManLeader";                                         
@@ -168,7 +169,7 @@ class PAF_RiflemanLAT_GROM_m : PAF_base_m_B_temp
       backpack = "PAF_LAT_m_pack_GROM"
       };
 
-class PAF_Medic_GROM_m : PAF_base_m_B_temp                            
+class PAF_Medic_GROM_m : PAF_base_m_B_GROM_temp                            
       {
       editorSubcategory = "PAF_Factions_GROM_category";                  
       icon = "iconManLeader";                                         
@@ -180,7 +181,7 @@ class PAF_Medic_GROM_m : PAF_base_m_B_temp
       backpack = "PAF_Medic_m_pack_GROM"
       };
 
-class PAF_Rifleman_GROM_m : PAF_base_m_B_temp                             
+class PAF_Rifleman_GROM_m : PAF_base_m_B_GROM_temp                             
       {
       editorSubcategory = "PAF_Factions_GROM_category";                  
       icon = "iconManLeader";                                         
