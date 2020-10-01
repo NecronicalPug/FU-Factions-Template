@@ -66,7 +66,7 @@ class PAF_base_m_B_temp : FU_base_B //_temp unique name of base units that will 
 
                   };
 
-class PAF_base_m_B_GROM : FU_base_B //_temp unique name of base units that will affect all your soldiers
+class PAF_base_m_B_GROM_temp : FU_base_B //_temp unique name of base units that will affect all your soldiers
                   {
                   identityTypes[] = {"LanguagePOL_F","Head_NATO"}; //language and face
                   side = 1;                                         //Defines faction in mission

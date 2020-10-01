@@ -44,6 +44,7 @@ class PAF_base_m_B_temp; //_temp unique name from base templates config, copies 
 
 class FU_literadio_bdu; //defines backpacks you wish to use for your units see bottom
 class FU_kitbag_black;
+class B_kitbag_mcamo;
 
 
 //soldier loadouts below
@@ -143,7 +144,7 @@ class PAF_Medic_SF_m : PAF_base_m_B_temp                                 //first
 
       };
 
-class PAF_Leader_GROM_m : PAF_base_m_B_GROM                             
+class PAF_Leader_GROM_m : PAF_base_m_B_temp                             
       {
       editorSubcategory = "PAF_Factions_GROM_category";                  
       icon = "iconManLeader";                                         
@@ -155,7 +156,7 @@ class PAF_Leader_GROM_m : PAF_base_m_B_GROM
       backpack = "PAF_Leader_m_pack_temp"
       };
 
-class PAF_RiflemanLAT_GROM_m : PAF_base_m_B_GROM                             
+class PAF_RiflemanLAT_GROM_m : PAF_base_m_B_temp                             
       {
       editorSubcategory = "PAF_Factions_GROM_category";                  
       icon = "iconManLeader";                                         
@@ -167,7 +168,7 @@ class PAF_RiflemanLAT_GROM_m : PAF_base_m_B_GROM
       backpack = "PAF_LAT_m_pack_GROM"
       };
 
-class PAF_Medic_GROM_m : PAF_base_m_B_GROM                             
+class PAF_Medic_GROM_m : PAF_base_m_B_temp                            
       {
       editorSubcategory = "PAF_Factions_GROM_category";                  
       icon = "iconManLeader";                                         
@@ -179,7 +180,7 @@ class PAF_Medic_GROM_m : PAF_base_m_B_GROM
       backpack = "PAF_Medic_m_pack_GROM"
       };
 
-class PAF_Rifleman_GROM_m : PAF_base_m_B_GROM                             
+class PAF_Rifleman_GROM_m : PAF_base_m_B_temp                             
       {
       editorSubcategory = "PAF_Factions_GROM_category";                  
       icon = "iconManLeader";                                         
