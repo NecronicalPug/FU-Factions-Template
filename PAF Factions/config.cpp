@@ -95,6 +95,7 @@ class PAF_base_m_O_temp : FU_base_O //opfor
                   respawnitems[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
                              mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"};
                   };
+
 class PAF_base_m_I_temp : FU_base_I //indep
                   {
                   identityTypes[] = {"LanguagePOL_F","Head_enoch"};
@@ -106,7 +107,6 @@ class PAF_base_m_I_temp : FU_base_I //indep
                   respawnitems[] = {mags_5(ACE_packingBandage),mags_5(ACE_elasticBandage),mags_4(ACE_tourniquet),mags_4(ACE_morphine),mags_4(ACE_epinephrine),
                              mags_2(ACE_CableTie),"ACE_RangeCard","ACE_MapTools","ACE_Flashlight_XL50","ACE_EntrenchingTool"};
                   };
-
 
     
 };  

@@ -4,7 +4,7 @@ class CfgPatches
     {
            name = "Polish Armed Forces"; //name shown in config only
            Author = "Pug, forked from FU-Factions-Template by Bolty";                                                                     //name shown in config only
-           units[] = {"PAF_Leader_m_temp","PAF_RiflemanLAT_m_temp","PAF_Medic_m_temp","PAF_Crew_m_temp","PAF_Leader_SF_m","PAF_Rifleman_SF_m","PAF_Medic_SF_m"};   //Needed for use with Zeus, must be same as below when _temp is changed
+           units[] = {"PAF_Leader_m_temp","PAF_RiflemanLAT_m_temp","PAF_Medic_m_temp","PAF_Crew_m_temp","PAF_Leader_SF_m","PAF_Rifleman_SF_m","PAF_Medic_SF_m","PAF_Rifleman_GROM_m","PAF_Leader_GROM_m","PAF_Medic_GROM_m","PAF_RiflemanLAT_GROM_m"};   //Needed for use with Zeus, must be same as below when _temp is changed
            weapons[] = {};
    };
 };
@@ -40,7 +40,7 @@ class Cfgvehicles
 
 
 class PAF_base_m_B_temp;
-class PAF_base_m_B_GROM_temp;   //_temp unique name from base templates config, copies item loadout faction and voice and faces Currently Blufor
+class PAF_base_m_B_GROM_temp;  //_temp unique name from base templates config, copies item loadout faction and voice and faces Currently Blufor
                                       
 class FU_literadio_bdu; //defines backpacks you wish to use for your units see bottom
 class FU_kitbag_black;
@@ -191,11 +191,9 @@ class PAF_Rifleman_GROM_m : PAF_base_m_B_GROM_temp
       magazines[] = {mags_2(ammo_pistol_b),mags_7(ammo_rifle_grom),mags_2(HandGrenade),mags_2(SmokeShell)};                                                                  
       backpack = "PAF_LAT_m_pack_GROM"
       };
+
+
 //backpacks below
-
-
-
-
 
 
 class PAF_Medic_m_pack_temp : FU_kitbag_black  //similar to units above, first name your unique name, second copied item name
